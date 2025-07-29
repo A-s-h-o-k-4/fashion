@@ -33,7 +33,7 @@ function Signup({setAllow}) {
       }
       else{
         clear()
-        await axios.post('http://localhost:3000/signup',{'name':name,email:email,'password':pass})
+        await axios.post('https://fashion-j7sb.onrender.com/signup',{'name':name,email:email,'password':pass})
         .then((res)=>{
           const data = res.json()
           if (data.method == true) {

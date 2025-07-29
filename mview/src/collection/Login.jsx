@@ -15,7 +15,7 @@ function Login({setAllow}) {
  
   const log = ()=>{
     if (email !== '' && pass !== '') {
-      axios.post('http://localhost:3000/login',{'email':email,'password':pass})
+      axios.post('https://fashion-j7sb.onrender.com/login',{'email':email,'password':pass})
       .then((res)=>{
         const out = res.data
           if (out.method == true) {
